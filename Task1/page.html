@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+         /* Reset default styles */
+         * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      /* Body styles */
+      body {
+        
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      
+      /* Header styles */
+      header {
+        width: 100%;
+        height: 50px;
+        background:linear-gradient(135deg,rgb(255 216 0),rgb(215 1 177));
+        color: #fff;
+        padding-top: 0px;
+        padding-left: 20px;
+        position:fixed;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      header h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      nav{
+          margin-top: 15px;
+          
+      }
+      
+      nav ul {
+        list-style-type: none;
+      }
+      
+      nav ul li {
+        display: inline;
+        margin-right: 5px;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      nav ul li a:hover{
+color: red;
+background: rgb(248, 238, 135);
+border-radius: 1px;
+padding-top:40px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 14px;
+      }
+      
+      .sec1 {
+        background-image: url(pexels-pixabay-256559.jpg);
+        background-size: cover;
+        height: 518px;
+        width: 100%;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .sec1-d {
+        width: 700px;
+        height: 250px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.631);
+        text-align: center;
+        margin-top: 70px;
+      }
+      
+      .sec1-d h2 {
+        padding-top: 15px;
+        font-size: 38px;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+      
+      .sec1-d p {
+        width: 500px;
+        font-size: 10px;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+      .btn {
+        cursor: pointer;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:rgb(241, 133, 9);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        margin: 10px;
+      }
+      .btn:hover
+      {
+        background: #fe8ad2b7;
+        color: black;
+      }
+      .sec2
+      {
+        background: white;
+          background-size: cover;
+          height: 450px;
+      width: 100%;
+         padding: 40px;
+         
+      }    
+      .grid
+      {
+        display: grid;
+         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+      }
+          footer {
+            background:linear-gradient(210deg,rgb(255 216 0),rgb(215 1 177));
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      .hed{
+        display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 40px;
+          margin-bottom: 20px;
+      }
+      .gir
+      {
+        width: 280px;
+        margin: 20px; 
+        display: flex;
+      }
+      .gir h3
+      {
+        font-size: 20px;
+        margin-left: 20px;
+      }
+      .gir p
+      {
+        font-size: 10px;
+        margin-left: 20px;
+      }
+      .gir img{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+      
+      .gi
+      {
+        width: 280px;
+        margin: 20px; 
+        display: flex;
+      }
+      .sec1-dd
+      {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+      }
+      .gi h3
+      {
+        font-size: 20px;
+        margin-left: 20px;
+      }
+      .gi p
+      {
+        font-size: 10px;
+        margin-left: 20px;
+      }
+      .gi img{
+        width: 120px;
+        height: 90px;
+      }
+      .sec3
+      {
+        width: 100%;
+        background: rgb(248, 238, 135);
+          background-size: cover;
+          height: 518px;
+         padding:70px;
+         
+      }  
+      .hed1{
+        display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 0px;
+          margin-bottom: 20px;
+      }  
+      .sec4
+      {
+        width: 100%;
+        display: flex;
+          background: rgb(255, 255, 255);
+          background-size: cover;
+          height: 300px;
+          padding: 70px;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          align-content: space-around;
+          justify-content: center;
+          align-items: center;
+      }
+      .sec4 h3
+      {
+        font-size: 30px;
+        margin-left: 20px;
+      
+      }
+      .con
+      {
+        display: flex;
+        justify-content: center;
+      }
+      fieldset{
+        
+        display: flex;
+          justify-content: center;
+          padding: 10px;
+          width: 300px;
+          height: 110px;
+          border-color: transparent;
+          border-radius: 10px;
+          margin: 10px;
+          background: rgb(250, 238, 114);
+          flex-wrap: wrap;
+          align-items: center;
+          flex-direction: column;
+      }
+      fieldset h4{
+        margin-bottom: 5px;
+      }
+      fieldset p{
+        width: 250PX;
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      footer{
+       
+      }
+  </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="sec">
+    <header>
+        <h1>XYZ Company</h1>
+        <nav>
+          <ul>
+            <li><a href="#sec1">Home</a></li>
+            <li><a href="#sec2">Modules</a></li>
+            <li><a href="#sec3">Books</a></li>
+            <li><a href="#sec4">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
+      <section class="sec1" id="sec1">
+        <div class="sec1-d">
+          <div class="sec1-dd">
+          <h2>Discover the Joy of Reading</h2>
+          <p>Explore our extensive collection of books and enrich your knowledge. 
+            Lorem ipsum dolor, sit amet consectetur  Lorem ipsum dolor sit amet consectet, vero reiciendis ullam nostrum dolor tempore quisquam! Ab exercitationem cum fugit magnam!
+          </p></div>
+          <a href="#" class="btn">Register NOW</a>
+          <a href="#" class="btn">Login NOW</a>
+        </div>
+        <hr>
+      </section>
+
+
+      <section  class="sec2" id="sec2">
+        <div class="hed">
+<h2>Our Modules</h2>
+
+        <p>These modules help in the smooth functioning of Library Management Software</p>
+      </div>
+        <div class="grid">
+          <div class="gir">
+
+        <img src="1 (1).png" alt="error">
+        <div>
+<h3>Cataloguing</h3>
+<p>It is the process of creating a list of all bibliographic items such as short description, list of subjects, author name and the classification.</p>
+</div></div>
+<div class="gir">
+<img src="2.png" alt="error">
+<div>
+<h3>Membership Module</h3>
+<p>This module keep track of all important information of student, who has taken membership of library.</p>
+</div></div>
+<div class="gir">
+<img src="3.png" alt="error">
+<div>
+<h3>Report Generator</h3>
+<p>It helps in generating various reports like status of issued books, total members, books returned etc.
+</p></div></div>
+<div class="gir">
+<img src="4.png" alt="error">
+<div>
+<h3>Circulation</h3>
+<p>It is a central and highly visible function of library, as it keeps the record of status of books in the library.
+</p></div></div>
+<div class="gir">
+  <img src="5.png" alt="error">
+  <div>
+<h3>OPAC</h3>
+<p>Online Public Access Catalog, it is an online datatbase of materials kept in the library. It allows the search for an item of our choice in the library.
+</p></div></div>
+<div class="gir">
+<img src="6.png" alt="error">
+<div>
+<h3>Acquisition</h3>
+<p>It the department in the library which is responsible for the selection and purchase of material or resources in the library.
+</p></div></div>
+</div>
+
+
+</section>
+  
+<section  class="sec3" id="sec3">
+  <div class="hed1">
+<h2>Our Collection</h2>
+
+  <p>A large collection of book available for diverse minds.</p>
+</div>
+  <div class="grid">
+    <div class="gi">
+
+  <img src="d1.jpg" alt="error">
+  <div>
+<h3>Ancient Mythology</h3>
+<p>Ancient Greek mythology is a vast and fascinating group of legends about gods and goddesses, heroes and monsters, warriors and fools, that were an important part of everyday life in the ancient world.</p>
+</div></div>
+<div class="gi">
+<img src="d2.jpg" alt="error">
+<div>
+<h3>Novels</h3>
+<p>A novel is a narrative work of prose fiction that tells a story about specific human experiences over a considerable length. Prose style and length, as well as fictional or semi-fictional subject matter, are the most clearly defining characteristics of a novel.</p>
+</div></div>
+<div class="gi">
+<img src="d3.jpg" alt="error">
+<div>
+<h3>Science</h3>
+<p>Science is the pursuit and application of knowledge and understanding of the natural and social world following a systematic methodology based on evidence.
+</p></div></div>
+<div class="gi">
+<img src="d4.jpg" alt="error">
+<div>
+<h3>Mathematics</h3>
+<p>The science of structure, order, and relation that has evolved from elemental practices of counting, measuring, and describing the shapes of objects.
+</p></div></div>
+<div class="gi">
+<img src="d5.jpg" alt="error">
+<div>
+<h3> Computer Science</h3>
+<p>Computer science focuses on the development and testing of software and software systems. It involves working with mathematical models, data analysis and security, algorithms, and computational theory. 
+</p></div></div>
+<div class="gi">
+<img src="d6.jpg" alt="error">
+<div>
+<h3>Hindi</h3>
+<p>Description is the pattern of narrative development that aims to make vivid a place, object, character, or group.
+</p></div></div>
+</div>
+
+
+</section>
+
+
+
+<section class="sec4" id="sec4">
+  <h3>Contact Us</h3>
+<div class="con">
+  <fieldset>
+    <h4>E-Mail </h4>
+    <p>xyzsample@gmail.com</p>
+  </fieldset>
+  <fieldset>
+    <h4>Phone</h4>
+    <p width="150px">+91-8764789467, +91-9720000022</p>
+  </fieldset>
+  <fieldset>
+   <h4>Location </h4>
+    <p>2D,Nirmala Apartment,Shobha Society,New Delhi-231212</p>
+  </fieldset>
+</div>
+</section>
+
+  <footer>
+    <p>&copy; 2000 XYZ SAMPLE. All rights reserved.</p>
+  </footer>
+</body>
+</html>
